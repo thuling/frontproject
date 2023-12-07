@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eaeaea;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: white;
+}
+
+.initialLogo{
+    font-size: 2em;
+    color: black;
+    font-weight: 700;
+}
+
+.navlist{
+    
+    display: flex;
+    gap: 10px;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: black;
+    padding: 6px 15px;  
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    font-size: 20px;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid black;
+}
+
+
+.card{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+
+}
+
+.card:hover{
+    height: 450px;
+
+}   
+
+.imgBx{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    background: #000;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .imgBx{
+    width: 250px;
+    height: 250px;
+}
+
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+
+.card:hover .content .details{
+    transform: translateY(0px)
+}
+
+.card .content .details h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.2em;
+}
+
+.card .content .details h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.card .content .details .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card .content .details .data h3{
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.2em;
+}
+
+.card .content .details .data h3 a{
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #333;
+    opacity: 0.5;
+}
+.card .content .details .actionBtn button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #222;
+    color: #eaeaea;
+    cursor: pointer;
+}
+
+
+/*Card imagens*/
+
+.cardPerson{
+    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.galery{
+    display: flex;
+    gap: 30px;
+}
+
+.cardImg{
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #fff;
+    position: relative;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardBody{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #333333b0;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.7s;
+}
+
+.cardImg:hover .cardBody{
+    right: 0;
+}
+
+.cardTitle{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.subtitle{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.infos{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+footer {
+
+    align-items: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    color: #eaeaea;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+

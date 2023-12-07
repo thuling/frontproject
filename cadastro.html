@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="./style-cadastro.css">
+  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+  <header>
+        <a href="index.html" class="initialLogo">The Stupids</a>
+        <nav>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Saiba Mais</a></li>
+                <li><a href="cadastro.html">Contato & Feedback</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <main>
+        <div class="background"></div>
+        <div class="box">
+            <div class="inner-box">
+            <div class="forms-wrap">
+                <form action="inicial.html" autocomplete="off" class="sign-in-form">
+                <div class="logo">
+                    <h1>The Stupids</h1>
+                </div>
+
+                <div class="heading">
+                    <h2>Bem-vindo(a)</h2>
+                    <h6>Ainda não possui registro?</h6>
+                    <a href="#" class="toggle">Registrar</a>
+                </div>
+
+                <div class="actual-form">
+                    <div class="input-wrap">
+                    <input type="text" minlength="4" class="input-field" autocomplete="off" required/>
+                    <label>Nome</label>
+                    </div>
+
+                    <div class="input-wrap">
+                    <input type="password" minlength="4" class="input-field" autocomplete="off" required/>
+                    <label>Senha</label>
+                    </div>
+
+                    <input type="submit" value="Fazer login" class="sign-btn" />
+
+                    <p class="text">
+                    Esqueceu suas credenciais ou senha?
+                    <a href="#">Ajuda</a> para logar
+                    </p>
+
+                    <br><br><br>
+                    <div class="input-wrap">
+                        <input type="text" class="input-field" autocomplete="off">
+                        <label>Dê-nos seu feedback!</label>
+                    </div>
+                    <input type="submit" value="Enviar Feedback" class="sign-btn">
+                    
+                </div>
+                </form>
+
+                <form action="inicial.html" autocomplete="off" class="sign-up-form">
+                <div class="logo">
+                    <h1>The Stupids</h1>
+                </div>
+
+                <div class="heading">
+                    <h2>Bem-vindo(a)</h2>
+                    <h6>Ainda não possui registro?</h6>
+                    <a href="#" class="toggle"><b>Fazer login</b></a>
+                </div>
+
+                <div class="actual-form">
+                    <div class="input-wrap">
+                    <input type="text" minlength="4" class="input-field" autocomplete="off" required/>
+                    <label>Nome</label>
+                    </div>
+
+                    <div class="input-wrap">
+                    <input type="email" class="input-field" autocomplete="off" required/>
+                    <label>Email</label>
+                    </div>
+
+                    <div class="input-wrap">
+                    <input type="password" minlength="4" class="input-field" autocomplete="off" required/>
+                    <label>Senha</label>
+                    </div>
+
+                    <input type="submit" value="Registrar" class="sign-btn" />
+
+                    <p class="text">
+                    Ao registrar, eu concordo com
+                    <a href="#">Termos de Uso</a> e
+                    <a href="#">Política de Privacidade</a>
+                    </p>
+
+
+                    <br><br><br>
+                    <div class="input-wrap">
+                        <input type="text" class="input-field" autocomplete="off">
+                        <label>Dê-nos seu feedback!</label>
+                    </div>
+                    <input type="submit" value="Enviar Feedback" class="sign-btn">
+                </div>
+                </form>
+            </div>
+
+            <div class="carousel">
+                <div class="images-wrapper">
+                <img src="./img/cidade.jpg" class="image img-1 show" alt="" />
+                <img src="./img/cidade2.jpg" class="image img-2" alt="" />
+                <img src="./img/cidade3.jpg" class="image img-3" alt="" />
+                </div>
+
+                <div class="text-slider">
+                <div class="text-wrap">
+                    <div class="text-group">
+                    <h2>Nos conheça melhor</h2>
+                    <h2>Entre em contato</h2>
+                    <h2>Dê seu feedback</h2>
+                    </div>
+                </div>
+
+                <div class="bullets">
+                    <span class="active" data-value="1"></span>
+                    <span data-value="2"></span>
+                    <span data-value="3"></span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script-cadastro.js"></script>
+</body>
+
+</html>
